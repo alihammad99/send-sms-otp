@@ -33,19 +33,26 @@ verifyOTP("+964123456789", "1234", "development");
 
 Sends an SMS message to the specified phone number.
 
-- `token`: [D7Networks](https://d7networks.com/) token (string, required)
-- `phoneNumber`: Receiver's mobile number (string, required)
-- `otpLength`: Length of OTP code digits (number, optional, default: 0, min: 1, max: 12)
-- `message`: Message to be sent (string, optional, default: null)
-- `expiresIn`: OTP code lifetime in minutes (number, optional, default: 30)
-- `environment`: Coding environment for logging (string, optional, default: "development")
+| Option        | Description                                 | Type   | Default       | Example                 | Required |
+| ------------- | ------------------------------------------- | ------ | ------------- | ----------------------- | -------- |
+| `token`       | [D7Networks](https://d7networks.com/) token | string | -             | "your-d7networks-token" | Yes      |
+| `phoneNumber` | Receiver's mobile number                    | string | -             | "+964123456789"         | Yes      |
+| `otpLength`   | Length of OTP code digits                   | number | 0             | 4                       | No       |
+| `message`     | Message to be sent                          | string | null          | "Hello world!"          | No       |
+| `expiresIn`   | OTP code lifetime in minutes                | number | 30            | 60                      | No       |
+| `environment` | Coding environment for logging              | string | "development" | "production"            | No       |
+
+Feel free to copy and paste this table into your README file, and adjust formatting if needed.
 
 ### verifyOTP(phoneNumber, otpCode, environment)
 
 Verifies the provided OTP code for the given phone number.
 
-- `phoneNumber`: Receiver's mobile number (string, required)
-- `otpCode`: OTP code to be verified (string, required)
-- `environment`: Coding environment for logging (string, optional, default: "development")
+| Option        | Description                                       | Type    | Example           | Required |
+|---------------|---------------------------------------------------|---------|-------------------|----------|
+| `phoneNumber` | Receiver's mobile number                          | string  | "+964123456789"  | Yes      |
+| `otpCode`     | OTP code to be verified                            | string  | "1234"            | Yes      |
+| `environment` | Coding environment for logging                     | string  | "development"     | No       |
+
 
 Feel free to contribute and report issues on [GitHub](https://github.com/your-username/send-sms-otp).
