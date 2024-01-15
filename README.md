@@ -8,9 +8,9 @@ If `otpLength` is not included, the OTP code process will be ignored. However, y
 
 - `SMS Messaging`: Effortlessly send SMS messages with customizable content.
 - `OTP Generation and Verification`: Generate OTP codes and verify them hassle-free.
-- `Automatic Management`: If otpLength is not specified, OTP codes are automatically generated, saved, and managed.
-- `D7 Networks Integration`: Utilizes D7 Networks for secure and reliable communication.
-- `Easy Integration`: Simple and intuitive API for quick integration into your projects.
+- `Automatic Management`: If otpLength is specified, OTP codes are automatically generated, saved, and managed.
+- `D7Networks Integration`: Utilizes [D7Networks](https://d7networks.com/) for secure and reliable communication.
+- `Easy Integration`: The package offers an easy-to-use interface, ensuring a smooth and quick setup within your.
 
 ## Installation
 
