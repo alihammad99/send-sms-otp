@@ -48,13 +48,5 @@ Verifies the provided OTP code for the given phone number.
 - `otpCode`: OTP code to be verified (string, required)
 - `environment`: Coding environment for logging (string, optional, default: "development")
 
-## Options
-
-- `token`: D7 Networks token (string, required)
-- `phoneNumber`: Receiver's mobile number (string, required)
-- `otpLength`: Length of OTP code digits (number, optional, default: 0, min: 1, max: 12)
-- `message`: Message to be sent (string, optional, default: null)
-- `expiresIn`: OTP code lifetime in minutes (number, optional, default: 30)
-- `environment`: Coding environment for logging (string, optional, default: "development")
 
 Feel free to contribute and report issues on [GitHub](https://github.com/your-username/send-sms-otp).
