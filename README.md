@@ -2,6 +2,16 @@
 
 A simple package to streamline the process of sending SMS messages and managing OTP (One-Time Password) functionality. This package utilizes D7 Networks, so you'll need a valid token for authentication.
 
+If `otpLength` is not included, the OTP code process will be ignored. However, you can still generate OTP codes by just providing the length, and it will be generated, saved, and managed automatically. The OTP code is saved in temporary memory for seamless verification.
+
+## Features
+
+- `SMS Messaging`: Effortlessly send SMS messages with customizable content.
+- `OTP Generation and Verification`: Generate OTP codes and verify them hassle-free.
+- `Automatic Management`: If otpLength is not specified, OTP codes are automatically generated, saved, and managed.
+- `D7 Networks Integration`: Utilizes D7 Networks for secure and reliable communication.
+- `Easy Integration`: Simple and intuitive API for quick integration into your projects.
+
 ## Installation
 
 ```bash
@@ -48,11 +58,10 @@ Feel free to copy and paste this table into your README file, and adjust formatt
 
 Verifies the provided OTP code for the given phone number.
 
-| Option        | Description                                       | Type    | Example           | Required |
-|---------------|---------------------------------------------------|---------|-------------------|----------|
-| `phoneNumber` | Receiver's mobile number                          | string  | "+964123456789"  | Yes      |
-| `otpCode`     | OTP code to be verified                            | string  | "1234"            | Yes      |
-| `environment` | Coding environment for logging                     | string  | "development"     | No       |
-
+| Option        | Description                    | Type   | Example         | Required |
+| ------------- | ------------------------------ | ------ | --------------- | -------- |
+| `phoneNumber` | Receiver's mobile number       | string | "+964123456789" | Yes      |
+| `otpCode`     | OTP code to be verified        | string | "1234"          | Yes      |
+| `environment` | Coding environment for logging | string | "development"   | No       |
 
 Feel free to contribute and report issues on [GitHub](https://github.com/your-username/send-sms-otp).
