@@ -33,7 +33,7 @@ verifyOTP("+964123456789", "1234", "development");
 
 Sends an SMS message to the specified phone number.
 
-- `token`: D7 Networks token (string, required)
+- `token`: [D7Networks](https://d7networks.com/) token (string, required)
 - `phoneNumber`: Receiver's mobile number (string, required)
 - `otpLength`: Length of OTP code digits (number, optional, default: 0, min: 1, max: 12)
 - `message`: Message to be sent (string, optional, default: null)
@@ -47,6 +47,5 @@ Verifies the provided OTP code for the given phone number.
 - `phoneNumber`: Receiver's mobile number (string, required)
 - `otpCode`: OTP code to be verified (string, required)
 - `environment`: Coding environment for logging (string, optional, default: "development")
-
 
 Feel free to contribute and report issues on [GitHub](https://github.com/your-username/send-sms-otp).
