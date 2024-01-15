@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+
+# npm
+npm-debug.log
+npm-debug.log.*
+.pnpm
+.pnpm-store
+
+# Yarn
+yarn-error.log
+yarn.lock
+.pnp.*
+!yarn.lock.yarn-integrity
+.pnp
+.cache/
