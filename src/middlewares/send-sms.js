@@ -1,4 +1,3 @@
-import axios from "axios";
 export const sendSMS = async (options) => {
   const {
     token: token,
@@ -7,6 +6,7 @@ export const sendSMS = async (options) => {
     sender: sender,
     otp: otp,
   } = options;
+
   const data = JSON.stringify({
     messages: [
       {
@@ -24,16 +24,30 @@ export const sendSMS = async (options) => {
       report_url: "https://the_url_to_recieve_delivery_report.com",
     },
   });
+
   const config = {
-    method: "post",
-    url: "https://api.d7networks.com/messages/v1/send",
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
       Authorization: `Bearer ${token}`,
     },
-    data: data,
+    body: data,
   };
-  const send = await axios(config);
-  return send;
+
+  try {
+    const response = await fetch(
+      "https://api.d7networks.com/messages/v1/send",
+      config
+    );
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const send = await response.json();
+    return send;
+  } catch (error) {
+    // Handle errors here
+    console.error("Error sending SMS:", error);
+    throw error;
+  }
 };

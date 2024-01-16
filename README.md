@@ -64,4 +64,4 @@ Verifies the provided OTP code for the given phone number.
 | `otpCode`     | OTP code to be verified        | string | "1234"          | Yes      |
 | `environment` | Coding environment for logging | string | "development"   | No       |
 
-Feel free to contribute and report issues on [GitHub](https://github.com/your-username/send-sms-otp).
+Feel free to contribute and report issues on [GitHub](https://github.com/alihammad99/send-sms-otp).
