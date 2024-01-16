@@ -16,7 +16,7 @@ export const sendMessage = async (data) => {
   }
   const options = { ...data, otp: otp };
   const sent = await sendSMS(options);
-  const success = sent.status === 200;
+  const success = sent.status === "accepted";
   if (environment === "development") {
     if (success) {
       console.log("Message Sent!");
