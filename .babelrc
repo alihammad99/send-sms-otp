@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    [
+      "@babel/plugin-transform-modules-commonjs",
+      {
+        "strictMode": false,
+        "allowTopLevelThis": true,
+        "loose": true
+      }
+    ],
+    "@babel/plugin-transform-arrow-functions"
+    // Add other plugins as needed
+  ]
+}
