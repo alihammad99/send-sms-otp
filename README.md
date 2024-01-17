@@ -65,3 +65,10 @@ Verifies the provided OTP code for the given phone number.
 | `environment` | Coding environment for logs information | string | "development"   | No       |
 
 Feel free to contribute and report issues on [GitHub](https://github.com/alihammad99/send-sms-otp).
+
+
+## Support
+
+If you find this package helpful, consider buying me a coffee!
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="alihammad" data-color="#FFDD00" data-emoji=""  data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>

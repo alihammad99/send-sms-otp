@@ -1,6 +1,6 @@
 {
   "name": "send-sms-otp",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Send SMS messages or OTP codes automatically without writing headache logic.",
   "main": "lib/index.js",
   "files": [
