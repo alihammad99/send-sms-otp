@@ -70,8 +70,9 @@ Feel free to contribute and report issues on [GitHub](https://github.com/alihamm
 
 If you find this package helpful, consider buying me a coffee!
 
-<div align="center">
+<div style="text-align: left;">
   <a href="https://www.buymeacoffee.com/alihammad" target="_blank" rel="noopener noreferrer">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50">
   </a>
 </div>
+
