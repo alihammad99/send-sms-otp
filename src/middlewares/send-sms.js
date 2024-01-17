@@ -1,11 +1,7 @@
+import Log from "../utils/error";
+
 export const sendSMS = async (options) => {
-  const {
-    token: token,
-    phoneNumber: phoneNumber,
-    message: message,
-    sender: sender,
-    otp: otp,
-  } = options;
+  const { token, phoneNumber, message, sender, otp, environment } = options;
 
   const data = JSON.stringify({
     messages: [
@@ -19,10 +15,6 @@ export const sendSMS = async (options) => {
         data_coding: "text",
       },
     ],
-    message_globals: {
-      originator: sender || "Produx",
-      report_url: "https://the_url_to_recieve_delivery_report.com",
-    },
   });
 
   const config = {
@@ -41,13 +33,12 @@ export const sendSMS = async (options) => {
       config
     );
     if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+      Log("Invalid D7Networks token!", environment, "error");
     }
     const send = await response.json();
     return send;
   } catch (error) {
     // Handle errors here
-    console.error("Error sending SMS:", error);
-    throw error;
+    Log(`Error sending SMS: ${error}`, environment, "error");
   }
 };

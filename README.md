@@ -8,7 +8,7 @@ If `otpLength` is not included, the OTP code process will be ignored. However, y
 
 - `SMS Messaging`: Effortlessly send SMS messages with customizable content.
 - `OTP Generation and Verification`: Generate OTP codes and verify them hassle-free.
-- `Automatic Management`: If otpLength is specified, OTP codes are automatically generated, saved, and managed.
+- `Automatic Management`: OTP codes are automatically generated, saved, and managed when otpLength is specified.
 - `D7Networks Integration`: Utilizes [D7Networks](https://d7networks.com/) for secure and reliable communication.
 - `Easy Integration`: The package offers an easy-to-use interface, ensuring a smooth and quick setup within your.
 
@@ -29,7 +29,7 @@ sendMessage({
   phoneNumber: "+964123456789",
   otpLength: 4,
   message: "Hello world!",
-  expiresIn: 60,
+  expiresIn: 5,
   environment: "development",
 });
 
@@ -49,8 +49,8 @@ Sends an SMS message to the specified phone number.
 | `phoneNumber` | Receiver's mobile number                    | string | -             | "+964123456789"         | Yes      |
 | `otpLength`   | Length of OTP code digits                   | number | 0             | 4                       | No       |
 | `message`     | Message to be sent                          | string | null          | "Hello world!"          | No       |
-| `expiresIn`   | OTP code lifetime in minutes                | number | 30            | 60                      | No       |
-| `environment` | Coding environment for logging              | string | "development" | "production"            | No       |
+| `expiresIn`   | OTP code lifetime in minutes                | number | 10            | 5                       | No       |
+| `environment` | Coding environment for logs comments        | string | "development" | "production"            | No       |
 
 Feel free to copy and paste this table into your README file, and adjust formatting if needed.
 
@@ -58,10 +58,10 @@ Feel free to copy and paste this table into your README file, and adjust formatt
 
 Verifies the provided OTP code for the given phone number.
 
-| Option        | Description                    | Type   | Example         | Required |
-| ------------- | ------------------------------ | ------ | --------------- | -------- |
-| `phoneNumber` | Receiver's mobile number       | string | "+964123456789" | Yes      |
-| `otpCode`     | OTP code to be verified        | string | "1234"          | Yes      |
-| `environment` | Coding environment for logging | string | "development"   | No       |
+| Option        | Description                             | Type   | Example         | Required |
+| ------------- | --------------------------------------- | ------ | --------------- | -------- |
+| `phoneNumber` | Receiver's mobile number                | string | "+964123456789" | Yes      |
+| `otpCode`     | OTP code to be verified                 | string | "1234"          | Yes      |
+| `environment` | Coding environment for logs information | string | "development"   | No       |
 
 Feel free to contribute and report issues on [GitHub](https://github.com/alihammad99/send-sms-otp).

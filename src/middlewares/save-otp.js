@@ -1,1 +1,1 @@
-export const saveOTP=new Map;
+export const saveOTP = new Map();
