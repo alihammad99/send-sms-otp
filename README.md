@@ -52,7 +52,6 @@ Sends an SMS message to the specified phone number.
 | `expiresIn`   | OTP code lifetime in minutes                | number | 10            | 5                       | No       |
 | `environment` | Coding environment for logs comments        | string | "development" | "production"            | No       |
 
-Feel free to copy and paste this table into your README file, and adjust formatting if needed.
 
 ### verifyOTP(phoneNumber, otpCode, environment)
 
