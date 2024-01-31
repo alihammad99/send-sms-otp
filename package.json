@@ -1,16 +1,24 @@
 {
   "name": "send-sms-otp",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Send SMS messages or OTP codes automatically without writing headache logic.",
   "main": "lib/index.js",
   "files": [
-    "lib"
+    "lib",
+    "!README.md"
   ],
   "scripts": {},
   "author": "Ali Hammad",
   "repository": "https://github.com/alihammad99/send-sms-otp",
   "license": "ISC",
-  "keywords": ["javascript", "sms", "otp", "one time password", "passwordless", "d7networks"],
+  "keywords": [
+    "javascript",
+    "sms",
+    "otp",
+    "one time password",
+    "passwordless",
+    "d7networks"
+  ],
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/plugin-transform-arrow-functions": "^7.23.3",
